@@ -531,7 +531,7 @@ app.post('/upload', (req, res) => {
           y: qrPos.y,
           width: cfg.qr,
           height: cfg.qr,
-          rotate: degrees(-90)
+          rotate: degrees(90)
         });
 
         // Texto a la derecha del QR
@@ -548,7 +548,7 @@ app.post('/upload', (req, res) => {
             size: cfg.font,
             font: textFont,
             color: rgb(0.15, 0.15, 0.15),
-            rotate: degrees(-90)
+            rotate: degrees(90)
           });
           textLocalV -= lineGap;
         }
